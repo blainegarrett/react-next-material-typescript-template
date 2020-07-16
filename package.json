@@ -1,6 +1,6 @@
 {
   "name": "react-next-material-typescript-template",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple opinionated template project for spinning up React demos using Next.js, Material-UI, etc.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,9 @@
     "build": "next build",
     "start": "next start -p 8080",
     "lint": "eslint . --ext .js,.ts,.tsx",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --collectCoverage true",
+    "unit": "jest --testRegex '(?<!integration\\.)test\\.ts(x?)$'",
+    "integration": "jest --testRegex 'integration\\.test\\.ts(x?)$'"
   },
   "repository": {
     "type": "git",
@@ -34,6 +36,7 @@
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
+    "@types/jest": "^26.0.4",
     "@types/node": "^14.0.23",
     "@types/react": "^16.9.43",
     "@typescript-eslint/eslint-plugin": "^3.6.1",
@@ -44,6 +47,29 @@
     "eslint-plugin-jsx-a11y": "^6.3.1",
     "eslint-plugin-react": "^7.20.3",
     "eslint-plugin-react-hooks": "^4.0.8",
+    "jest": "^26.1.0",
+    "ts-jest": "^26.1.2",
     "typescript": "^3.9.6"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "json",
+      "ts"
+    ],
+    "rootDir": "src",
+    "testRegex": ".test.ts(x?)$",
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    },
+    "collectCoverageFrom": [
+      "**/*.{ts,tsx}"
+    ],
+    "moduleNameMapper": {
+      "~/(.*)$": "<rootDir>/$1"
+    },
+    "coverageDirectory": "../coverage",
+    "testEnvironment": "jsdom",
+    "resetMocks": true
   }
 }
