@@ -1,0 +1,26 @@
+{
+    "files.exclude": {
+      ".git/": true,
+      "node_modules/": false,
+      "dist/": false
+    },
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/dist": true
+    },
+
+    // Personally I like 80 for readability but enforce 100
+    "editor.rulers": [80, 100, 120],
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    },
+    // Add some colorization using the MPLSART color palette 
+    "workbench.colorCustomizations": {
+      "titleBar.activeBackground": "#039be5",
+      "titleBar.inactiveBackground": "#014f75",
+      "titleBar.activeForeground": "#000",
+      "titleBar.inactiveForeground": "#000",
+      "statusBar.foreground": "#000",
+      "statusBar.background": "#039be5"
+    }
+  }
