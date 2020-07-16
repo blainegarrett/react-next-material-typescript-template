@@ -19,9 +19,19 @@
 
   "settings": {
     "import/resolver": {
+      "typescript": {}, // this loads <rootdir>/tsconfig.json to eslint
       "node": {
         "extensions": [".ts", ".tsx"]
       }
     }
-  }
+  },
+  "overrides": [
+    {
+        "files": ["**/*.tsx"],
+        "rules": {
+            "react/prop-types": "off"
+        }
+    }
+]
 }
+

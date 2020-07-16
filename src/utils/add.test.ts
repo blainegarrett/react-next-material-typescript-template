@@ -1,4 +1,4 @@
-import add from './add';
+import add from '~/utils/add';
 
 describe('adding two numbers should', () => {
   test('return expected when both args are non 0', () => {
