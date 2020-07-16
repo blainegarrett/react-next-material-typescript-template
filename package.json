@@ -1,6 +1,6 @@
 {
   "name": "react-next-material-typescript-template",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A simple opinionated template project for spinning up React demos using Next.js, Material-UI, etc.",
   "main": "index.js",
   "scripts": {
@@ -51,7 +51,6 @@
     "ts-jest": "^26.1.2",
     "typescript": "^3.9.6"
   },
-
   "jest": {
     "moduleFileExtensions": [
       "js",
@@ -73,5 +72,4 @@
     "testEnvironment": "jsdom",
     "resetMocks": true
   }
-
 }
