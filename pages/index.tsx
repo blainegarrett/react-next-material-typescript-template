@@ -3,8 +3,6 @@ import {
   GetStaticProps, NextPage, GetStaticPropsContext, GetStaticPropsResult,
 } from 'next';
 
-import add from '../src/utils/add';
-
 interface IndexProps {
   greeting: string
 }
@@ -18,7 +16,6 @@ const IndexPage:NextPage<IndexProps> = (props: IndexProps) => {
         {greeting}
         👋
         {' '}
-        {add(1, 2)}
       </h1>
     </div>
   );
