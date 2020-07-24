@@ -10,8 +10,14 @@ class MyDocument extends Document {
       <Html lang="en" dir="ltr">
         <Head>
           <meta charSet="utf-8" />
+          <link rel="manifest" href="/static/manifest.json" />
           <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no" />
           <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet" />
+
+          {/* Icons generated via https://favicon.io/favicon-generator/ */}
+          <link rel="apple-touch-icon" sizes="180x180" href="/static/apple-touch-icon.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png" />
+          <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon-16x16.png" />
         </Head>
         <body>
           <Main />
