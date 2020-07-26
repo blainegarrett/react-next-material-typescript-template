@@ -1,12 +1,13 @@
 {
   "name": "react-next-material-typescript-template",
-  "version": "0.0.7",
+  "version": "1.0.0",
   "description": "A simple opinionated template project for spinning up React demos using Next.js, Material-UI, etc.",
   "main": "index.js",
   "scripts": {
     "dev": "node ./server.js",
     "build": "next build",
-    "start": "NODE_ENV=production PORT=8080 node ./server.js",
+    "start": "node ./server.js",
+    "start-local": "NODE_ENV=production PORT=8080 node ./server.js",
     "lint": "eslint . --ext .js,.ts,.tsx",
     "test": "jest --collectCoverage true",
     "unit": "jest --testRegex '(?<!integration\\.)test\\.ts(x?)$'",
