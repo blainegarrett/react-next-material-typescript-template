@@ -2,6 +2,8 @@
 
 An opinionated Github Repository Template I use for my "Go To" tech stack. This gives a great starting point for Next.js projects with a mix of essentials and niceties. To use, simply click [Use Template] from the [Github Page](https://github.com/blainegarrett/react-next-material-typescript-template/).
 
+The building of this template prior to 1.0 release is documented in my Hashnode series "[Building a Next.js/TypeScript Github Template Repo](https://hashnode.com/series/building-a-nextjstypescript-github-template-repo-ckcnotrc7003ajos1heei4bez)"
+
 ## Included 
  - React
  - Next.js
