@@ -9,6 +9,12 @@ const nextConfig = {
     // Will be available on both server and client
     greeting_emoji: process.env.NEXT_PUBLIC_THEME_GREETING_EMOJI,
   },
+  async rewrites() {
+    return [
+      { source: '/favicon.ico', destination: '/static/favicon.ico' },
+      { source: '/robots.txt', destination: '/static/robots.txt' },
+    ];
+  },
 };
 
 // Comment out this conditional if you need to debug service worker during dev

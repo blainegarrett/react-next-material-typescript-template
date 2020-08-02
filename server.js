@@ -18,9 +18,6 @@ app
       res.status(200).sendFile('/service-worker.js', { root: `${__dirname}/.next/` });
     });
 
-    // Legacy Favicon Url
-    server.get('/favicon.ico', (_req, res) => res.status(200).sendFile('favicon.ico', { root: `${__dirname}/public/static/` }));
-
     // Route Everything else through Next.js directly
     server.all('*', (req, res) => handle(req, res));
 

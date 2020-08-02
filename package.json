@@ -36,7 +36,7 @@
     "@material-ui/icons": "^4.9.1",
     "@material-ui/styles": "^4.10.0",
     "express": "^4.17.1",
-    "next": "^9.4.4",
+    "next": "^9.5.1",
     "next-offline": "^5.0.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
