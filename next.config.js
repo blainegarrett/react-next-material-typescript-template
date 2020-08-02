@@ -13,7 +13,11 @@ const nextConfig = {
     return [
       { source: '/favicon.ico', destination: '/static/favicon.ico' },
       { source: '/robots.txt', destination: '/static/robots.txt' },
+      { source: '/service-worker.js', destination: '/_next/static/service-worker.js' },
     ];
+  },
+  workboxOpts: {
+    swDest: './static/service-worker.js',
   },
 };
 

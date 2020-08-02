@@ -13,11 +13,6 @@ app
   .then(() => {
     const server = express();
 
-    // Handle Service Worker
-    server.get('/service-worker.js', (_req, res) => {
-      res.status(200).sendFile('/service-worker.js', { root: `${__dirname}/.next/` });
-    });
-
     // Route Everything else through Next.js directly
     server.all('*', (req, res) => handle(req, res));
 
